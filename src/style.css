@@ -1,0 +1,76 @@
+:root {
+    --dark-color: #353537;
+    --light-color: #dde0e7; 
+}
+
+
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: #dde0e7;
+}
+
+@font-face {
+    font-family: RubikBold;
+    src: url(../fonts/Rubik-Bold.ttf)
+}
+
+@font-face {
+    font-family: RubikBlack;
+    src: url(../fonts/Rubik-Black.ttf);
+}
+
+#tooltip{
+    font-family: RubikBold;
+    /* font-size: 2rem; */
+    color: #dde0e7;
+    background-color: #353537;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.descbox, .descbox_sm{
+    position: absolute;
+    /* max-width: 500px; */
+    padding: 25px;
+    left: 0px;
+    top:0px;
+    background-color: #dde0e7;
+    border: #353537 solid 3px;
+    border-radius: 30px;
+    color: #353537;
+    font-family: RubikBold;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.highlight{
+    font-size: 140%;
+}
+.underline{text-decoration: underline;}
+
+#link{
+    color: blue;
+}
+
+#link:hover{
+    cursor: pointer;
+}
+
+.descbox:hover{
+    transform: scale(1.05);
+}
+
+
+.selection{
+    fill: #353537;
+    opacity: 0.3;
+}
+
+.axis{
+    color: var(--dark-color);
+    stroke-width: 3px;
+    font-family: RubikBold;
+}
+
+#horizontalAxis{font-size: larger;}

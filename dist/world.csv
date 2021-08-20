@@ -1,0 +1,16 @@
+geo,name,time,Democracy index (EIU),Electoral pluralism index (EIU),Government index (EIU),Political participation index(EIU),Political culture index (EIU),Civil liberties index (EIU),Change in democracy index (EIU)
+world,World ,2006,54.7,56.1,56.7,43.5,58.6,58.8,
+world,World ,2007,54.8,55.7,57.3,43.6,58.6,58.7,0.1
+world,World ,2008,55.0,55.6,57.9,43.8,58.6,58.8,0.2
+world,World ,2009,54.2,55.2,58.5,44.0,55.0,58.4,-0.7
+world,World ,2010,53.5,54.8,59.1,44.1,51.4,58.1,-0.7
+world,World ,2011,53.7,55.3,56.8,46.1,52.5,58.0,0.2
+world,World ,2012,54.0,55.6,56.0,49.2,50.9,58.6,0.3
+world,World ,2013,54.3,55.5,54.6,51.4,52.0,58.0,0.3
+world,World ,2014,54.7,55.0,54.1,52.7,53.9,58.0,0.4
+world,World ,2015,54.8,55.4,54.4,52.3,55.0,56.9,0.1
+world,World ,2016,54.7,55.2,55.1,52.5,54.7,56.1,-0.1
+world,World ,2017,52.8,54.0,53.9,51.1,54.4,50.5,-1.9
+world,World ,2018,53.12,53.97,53.64,54.10,53.81,50.14,0.34
+world,World ,2019,50.28,52.80,52.09,51.86,46.31,48.36,-2.84
+world,World ,2020,49.89,52.82,52.66,51.98,47.10,45.00,-0.39

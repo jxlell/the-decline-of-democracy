@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Decline Of Democracy</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./src/style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        </div>
+        <div id="viz">
+            <svg id="viz_svg" style="display: inline-block; margin: auto">
+                <g class="connectedlines"/>
+                <g class="colorstrokes"/>
+                <g class="arrow"/>
+                <g class="progress"/>
+                
+                <g class="categoryrects"/>
+                <g class="yearlines"/>
+                
+                <g class="world"/>
+                <text id="title" style="opacity: 0;"/>
+                <text id="desc54">The democracy index in the year 2006 stood at 54.7%</text>
+                <text id="desc49">The last reported index from 2020 stands only at 49.9%</text>
+                <text id="hovertut">Hover over description boxes to highlight the described objects</text>
+                <text id="clicktut">Click on the text box to navigate to the respective view</text>
+                
+                <g id="horizontalAxis" class="axis"/>
+                <g class="linegroup"/>
+                <g id="gcirc">
+                    <g class="valuecircle"/>
+                    <g class="descriptiontext"/>
+                </g> 
+                <g class="lollipop"/>
+                <g class="strokegroup"/>
+                <g class="numbers"/>
+                <g class="diff_arrows"/>
+                <g class="polybgs"/>
+                <g class="polys"/>
+                <g class="radarframe"/>
+                <g class="radaraxis">
+                    <g id="axis_pluralism"/>
+                    <g id="axis_government"/>
+                    <g id="axis_participation"/>
+                    <g id="axis_culture"/>
+                    <g id="axis_liberties"/>
+                </g>
+                <g class="radar_polys"/>
+                <g class="radarlabels"/>
+                <g class="labelbgs"/>
+                <g class="labels"/>
+                <g class="buttons"/>
+                <g class="hovercircles"/>
+                <g class="indexBrush"/>
+                <g id="yearAxis" class="axis"/>
+                <g id="verticalAxis" class="axis"/>
+            </svg>
+            <div id="tooltip" style="top: 0px; left: 0px; position: absolute;">
+            </div>
+            <div class="descbox" id="descworldindex">
+                The thick path in the line chart shows the <span class="highlight">decline of the average democracy index</span> from its first report in <tspan class="highlight">2006</tspan> to the latest data of <tspan class="highlight">2020.</tspan>
+                The index declined several points<br/>
+                The remaining lines show the courses for all countries recorded over the span of 15 years
+            </div>
+            <div class="descbox" id="descmli1">Mali lost <tspan class="highlight">almost 10 points </tspan>from 2013 to 2020 due to a <tspan class="highlight">military coup and other armed conflicts</tspan>, currently standing at <tspan class="highlight">39.3%. </tspan><tspan id="link">[1]</tspan></div>
+            <div class="descbox" id="descbdi1">Burundi's index <tspan class="highlight">did not increase once</tspan> since the recordings began. The country slips more and more into authoritarianism <tspan class="highlight">, currently, standing at 21.4%. </tspan><tspan id="link">[1]</tspan></div>
+            <div class="descbox" id="descwinners"><tspan class="highlight">Only 38 of 167 countries</tspan> increased their index value from 2019 to 2020. <tspan id="link">[1]</tspan></div>
+            <div class="descbox" id="desclosers">Meanwhile <tspan class="highlight">116 countries</tspan> record a decline. <tspan id="link">[1]</tspan></div>
+            <div class="descbox" id="descstagnate"><tspan class="highlight">13 countries</tspan> stagnated. <tspan id="link">[1]</tspan></div>
+            <div class="descbox" id="desctha">Thailand shows big ups and downs over the past years. In the course of a military coup in 2014, the country's democracy index declined to a value of 46.3% in 2017. 
+                A newly approved constitution brought important aspects of democracy back to Thailand. The index currently stands at 60.4%, barely holding the country in the category of flawed democracies. <tspan id="link">[2]</tspan></div>
+            <div class="descbox" id="desctun">The Arabic Spring in 2011 brought down Tunisia's long-standing dictator Ben Ali. The oppression of any opposition as well as the failure to lift people out of poverty lead to the revolution. 
+                The constitution of 2014 stabilized newly won democratic freedoms. <tspan id="link">[3]</tspan></div>
+            <div class="descbox" id="desclby">In 2011, Libya saw dictator Gadaffi overthrown. However, two civil wars in 2014 an 2019 hindered the stabilization of political conditions. 
+                The Arabic Spring failed to bring democracy to the country as it falls to 19.5\%, almost as low as before 2011. <tspan id="link">[4]</tspan></div>
+            <div class="descbox" id="descmli">In Mali, following the <tspan class="highlight">military coup</tspan>, democratically held elections were negated by a military dictatorship. <tspan id="link">[1]</tspan></div>
+            <div class="descbox" id="desckgz"><tspan class="highlight">In the Kyrgyz Republic, following the election in 2020, opposition parties and the Organization for Security and Co-Operation in Europe brought up accusations of election rigging and vote-buying </tspan><tspan id="link">[5]</tspan>.</div>
+            <div class="descbox" id="descben"><tspan class="highlight">Benin's state of democracy continues to decline. In elections of 2019 only two parties were admitted and the voter turnout was only 27% </tspan><tspan id="link">[7]</tspan>.</div>
+            <div class="descbox" id="desctwn"><tspan class="highlight">Taiwan showed a fast and rational response to the Corona Virus situation in 2020. Together with democratically held elections in 2020 and a strong turnout Taiwan established itself as the most democratic country in Asia.</tspan> <tspan id="link">[1]</tspan></div>
+            <div class="descbox" id="descbtn"><tspan class="highlight">Bhutan continues its democratization, the index increased by 4.1 points from 2019. </tspan><tspan id="link">[7]</tspan></div>
+            <div class="descbox" id="desctur"><tspan class="highlight">The people of Turkey show a growing interest in demonstrations and polititcs. The index rose by 3.9%.</tspan> <tspan id="link">[1]</tspan></div>
+            <div class="descbox" id="summarycourses">We saw <tspan class="highlight">different courses</tspan> of the democracy index over the last 15 years</div>
+            <div class="descbox" id="summarydecline">There was a clear majority of countries whose index <br/><tspan class="highlight">declined from last year</tspan></div>
+            <div class="descbox" id="summaryranks">The <tspan class="highlight">ranking is changing</tspan> constantly</div>
+            <div class="descbox" id="summaryshapes">There are many different <tspan class="highlight">shapes of democracy</tspan></div>
+            <div class="descbox_sm" id="matrix"><tspan class="highlight">The ountries can be arranged into an ordered matrix. You can hover over a country to see its position</tspan></div>
+            <div class="descbox_sm" id="matrix2"><tspan class="highlight">Now let's focus on Taiwan, the country with the biggest increase of the democracy index from 2019 to 2020 as well as Mali, the country with the biggest decline from last year's index. The current view shows the state of 2020. Navigate to the next view to see 2019's matrix.</tspan></div>
+            <div class="descbox_sm" id="matrix3"><tspan class="highlight">The animation of the matrix shows the positions changes.</tspan></div>
+            <div class="descbox_sm" id="matrix4"><tspan class="highlight">Arrows inside the country elements show the amount of change of the democracy index from the last to the currently displayed year. You can see how Taiwan shows a strong increase while Mali's arrow shows a great decrease of the index from 2019 to 2020.</tspan></div>
+            <div class="descbox_sm" id="shapes">The democracy index is a calculated average of 5 indicators. The following lists some of the questions every indicator seeks to quantify.<br/> 
+                <tspan class="underline">Electoral Process and Pluralism:</tspan> How fair and equal are elections? <br/> 
+                <tspan class="underline">Functioning of Government:</tspan> Does the government work transparently? <br/> 
+                <tspan class="underline">Political Participation:</tspan> How far are the people included into democratic elections and institutions?<br/> 
+                <tspan class="underline">Political Culture:</tspan> How democratic do the people perceive their country?<br/> 
+                <tspan class="underline">Civil Liberties:</tspan> How free are the country's people to consume media, hold protests or practice religion?<br/>
+                Observe how differently pronounced the indicators are for Norway and Singapur. Each countries radar chart is included in its representation in the matrix.
+            </div>
+            <div class="descbox_sm" id="weighted">Now let's take the indicators for Electoral Pluralism and Political Participation out of the equation. The two labels at the radar chart below faded out. After the introduction, you can recreate this by clicking on a label.<br/> 
+                Watch how Taiwan changes positions drastically and jumps up from place 74 to 38. Norway meanwhile stays in place. <br/><br/>
+            In the next view you can control everything by yourself. Select countries from the matrix, change the matrix elements with buttons on top, brush over the Dot Chart at the bottom to select an index interval or change the current year with a slider. Explore the data and get educated about the worldwide state of democracy!
+            </div>
+            <div style="position: absolute;font-family: RubikBold;color: #353537;" id="credits">Data taken from: Gapminder. Democracy Index. 2021. URL: https://www.gapminder.org/data/documentation/democracy-index/ (visited Apr. 25 2021) <br/>
+                [1] EIU. Democracy Index 2020. 2021. URL: https://www.eiu.com/n/campaigns/democracy-index-2020/ (visited Apr. 27 2021) <br/> 
+                [2] Bundeszentrale für politische Bildung. Thailand stimmt über neue Verfassung ab. 2016. URL: https://www.bpb.de/politik/hintergrundaktuell/231947/verfassungsreferendum-thailand-08-08-2016 (last visited June 24). <br/> 
+                [3] Bundeszentrale für politische Bildung. Tunesien. 2020. URL: https://www.bpb.de/internationales/weltweit/innerstaatliche-konflikte/182896/tunesien (last visited June 24)<br/> #
+                [4] Bundeszentrale für politische Bildung. Libyen. 2020. URL: https://www.bpb.de/internationales/weltweit/innerstaatliche-konflikte/182896/tunesien (last visited June 24) <br/> 
+                [5] Bundeszentrale für politische Bildung. Demonstrationen in Kirgisistan. URL: https://www.bpb.de/politik/hintergrund-aktuell/316254/kirgisistan (last visited June 24)<br/> 
+                [6] Auswärtiges Amt. Benin: Politisches Portrait. 2020. URL: https://www.auswaertiges-amt.de/de/aussenpolitik/laender/benin-node/politisches-portraet/209036 (last visited June 24) <br/> 
+                [7] Constantino Xavier. Bhutan's democratic transition and ties to India. 2020. URL: https://www.brookings.edu/blog/up-front/2020/07/08/bhutans-democratic-transition-and-ties-to-india/ (last visited June 24)</div>
+            <input type="range" min="2006" max="2020" value="2020" id="yearslider">
+        </div>
+        <script src="./dist/main.js"></script>
+
+    </body>
+</html>
