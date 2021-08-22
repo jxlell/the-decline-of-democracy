@@ -118,7 +118,18 @@ function drawLineChart(svg, section, width, height, yearScale, yearScaleZoom, in
                 .style("visibility", () => section < 16 ? "visible": "hidden");
     }
     
-    
+    d3.select(".yearlines").selectAll("circle")
+        .data(countries.flat())
+        .join("circle")
+        .attr("r", 2)
+        .style("fill", "black")
+        .attr("cx", d => yearScale(Number(d.time)))
+        .attr("cy", d => indexScale(Number(d['Democracy index (EIU)']))*0.5)
+        .style("visibility", () => section === 15 ? "visible": "hidden")
+        .style("opacity", 0.1)
+        .on("mouseover", function(e,d){tooltip.style("opacity", 1).style("visibility", "visible").html("<img src='gif/" + d.geo +  ".gif' style='height: 17px; float: left'/> <text style='float: right; padding-left: 5px'>" + d.name + ", "+ d['Democracy index (EIU)'] +"</text>");})
+        .on("mousemove", function(){tooltip.style("left", e.pageX-50 + "px").style("top", e.pageY-50 + "px");})
+        .on("mouseleave", function(e,d){tooltip.style("opacity", 0).style("visibility", "hidden")})
     
     let currentScale;
     let currentTicks;
